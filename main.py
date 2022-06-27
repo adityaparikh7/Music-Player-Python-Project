@@ -4,7 +4,7 @@ from tkinter import *
 import tkinter.font as font
 from tkinter import filedialog
 
-
+#need to add more functions like playlits
 #add many songs to the playlist
 def addsongs():
     #a list of songs is returned 
