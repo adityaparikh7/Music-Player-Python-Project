@@ -83,7 +83,7 @@ root.wm_iconbitmap("C:\\Users\\andro\\Downloads\\play (1).ico")
 mixer.init()
 
 #create the listbox to contain songs
-songs_list=Listbox(root,selectmode=SINGLE,bg="black",fg="white",font=('arial',15),height=12,width=60,selectbackground="white",selectforeground="black")
+songs_list=Listbox(root,selectmode=SINGLE,bg="black",fg="white",font=('arial',15),height=22,width=60,selectbackground="white",selectforeground="black")
 songs_list.grid(columnspan=9)
 
 #font is defined which is to be used for the button font 
@@ -105,9 +105,9 @@ stop_button['font']=defined_font
 stop_button.grid(row=1,column=2)
 
 #resume button
-Resume_button=Button(root,text="Resume",width =9,command=Resume)
-Resume_button['font']=defined_font
-Resume_button.grid(row=1,column=3)
+resume_button=Button(root,text="Resume",width =9,command=Resume)
+resume_button['font']=defined_font
+resume_button.grid(row=1,column=3)
 
 #previous button
 previous_button=Button(root,text="Prev",width =9,command=Previous)
