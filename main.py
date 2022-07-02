@@ -1,10 +1,18 @@
 #importing libraries 
 from pygame import mixer
-from tkinter import *
+from tkinter import * 
 import tkinter.font as font
 from tkinter import filedialog
+from tkinter import messagebox as mb
 
-#need to add more functions like playlits
+#need to add more functions like playlists and shuffle/repeat 
+
+def about():
+    mb.showinfo('About','This project was developed by Parth Pancholi, Raheel Parekh & Aditya Parikh.')
+
+def comingsoon():
+    mb.showinfo('Coming Soon','The Feature You Clicked Will Be Coming Soon.\n Please Wait For An Update. Stay Tuned')
+
 #add many songs to the playlist
 def addsongs():
     #a list of songs is returned 
@@ -18,7 +26,7 @@ def addsongs():
 def deletesong():
     curr_song=songs_list.curselection()
     songs_list.delete(curr_song[0])
-     
+
 
 def Play():
     song=songs_list.get(ACTIVE)
@@ -126,6 +134,7 @@ add_song_menu=Menu(my_menu)
 my_menu.add_cascade(label="Menu",menu=add_song_menu)
 add_song_menu.add_command(label="Add songs",command=addsongs)
 add_song_menu.add_command(label="Delete song",command=deletesong)
-
+add_song_menu.add_command(label="Add Playlist",command=comingsoon)
+add_song_menu.add_command(label="About Us",command=about)
 
 mainloop()
