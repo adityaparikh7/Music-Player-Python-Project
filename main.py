@@ -99,15 +99,15 @@ pause_button=Button(root,text="Pause",width =9,command=Pause)
 pause_button['font']=defined_font
 pause_button.grid(row=1,column=1)
 
-#stop button
-stop_button=Button(root,text="Stop",width =9,command=Stop)
-stop_button['font']=defined_font
-stop_button.grid(row=1,column=3)
-
 #resume button
 resume_button=Button(root,text="Resume",width =9,command=Resume)
 resume_button['font']=defined_font
 resume_button.grid(row=1,column=2)
+
+#stop button
+stop_button=Button(root,text="Stop",width =9,command=Stop)
+stop_button['font']=defined_font
+stop_button.grid(row=1,column=3)
 
 #previous button
 previous_button=Button(root,text="Prev",width =9,command=Previous)
