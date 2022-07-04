@@ -19,7 +19,7 @@ def addsongs():
     temp_song=filedialog.askopenfilenames(initialdir="Music/",title="Choose a song", filetypes=(("mp3 Files","*.mp3"),))
     #loop through everyitem in the list
     for s in temp_song:
-        s=s.replace("Music/","")
+        s=s.replace("C:/Users/andro/Music/","")
         songs_list.insert(END,s)
 
 
