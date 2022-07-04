@@ -86,6 +86,7 @@ def Next():
 #creating the root window 
 root=Tk()
 root.title('Project Crescendo')
+#filepath to icon will change 
 root.wm_iconbitmap("C:\\Users\\andro\\Downloads\\play (1).ico")
 #initialize mixer 
 mixer.init()
@@ -135,6 +136,8 @@ my_menu.add_cascade(label="Menu",menu=add_song_menu)
 add_song_menu.add_command(label="Add songs",command=addsongs)
 add_song_menu.add_command(label="Delete song",command=deletesong)
 add_song_menu.add_command(label="Add Playlist",command=comingsoon)
+add_song_menu.add_command(label="URL Streaming",command=comingsoon)
+add_song_menu.add_command(label="Download from URL",command=comingsoon)
 add_song_menu.add_command(label="About Us",command=about)
 
 mainloop()
